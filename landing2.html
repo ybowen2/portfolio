@@ -31,34 +31,80 @@
 
 
 <style>
+
+@font-face {font-family: Header;src: url(css/Fonts/AmaticSC-Regular.ttf);}
+
+
  #bg_container_landing { 
-  position: relative;
- 
-  max-width: 100%;
-  max-height: 70%;
+ position: relative;
+   max-width: 100%;
+  max-height: 100%;
 }
- 
+
 #bg-image
 {
- position:absolute;
+  position:absolute;
   z-index:-99;
+  margin: 2%;
   opacity: 0.5;
-  max-width: 100%
+  max-width: 99%;
+  max-height: 100%;
+  border-style: solid;
+  border-width: 3%;
+  border-color: #F1C2C2;
+  border-radius: 2%;
 }
 
 #overlay_text_landing {
   max-width: 100%;
+  max-height: 100%;
+  height: 70%;
   position: relative;
   text-align: center;
+}
+
+#yashnabowen 
+{
+  background-color: #000F2F;
+  
+  font-family: Header;
+  font-size: 6em;
+  color:#F1C2C2;
+
+  border-radius: 4%;
+  max-width: 30%;
+  max-height: 20%;
+  padding-bottom: 3%;
+  text-align: center;
+
+  opacity: 0.5;
+  margin-left: 35%;
+  
+
+}
+
+#daughterlearnerhobbyist
+{
+  color: #DE1892;
+  border-radius: 25px;
+  width: 35%;
+  max-width: 30%;
+  max-height: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  opacity: 0.6;
+  margin-left: 35%;
+  
+
 }
 
 #playbutton_landing
 {
     height:100%;
-    z-index: 200;
+    z-index: 110;
     width:100%;
-    margin-left:48.3%;
-    margin-top:4%;
+    vertical-align: top;
+    margin-left:45.3%;
     position:relative;
 }
   
@@ -68,41 +114,14 @@
   top:0%;
   height:10%;
   width:7%;
-  z-index: 200;
+  z-index: 110;
   position:relative;  
 }
 #projectspage
   {
     position: relative;
    }
-#yashnabowen 
-{
-  background-color: #D3D9DB;
-  color: black;
-  border-radius: 25px;
-  width: 35%;
-  max-width: 100%;
-  max-height: 15%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  opacity: 0.6;
-  margin-left: 60%;
 
-}
-
-#daughterlearnerhobbyist
-{
-  color: #DE1892;
-  border-radius: 25px;
-  width: 35%;
-  max-width: 100%;
-  max-height: 15%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  opacity: 0.6;
-  margin-left: 60%;
-
-}
 
 #padding_viralsweep
   {
@@ -150,29 +169,26 @@ height:40%;}
 
   <div>
     <div id="bg_container_landing" >
-        <img id="bg-image" src="content/homecover.jpg">
-    
-    
-    <br>
-    <br>
+     
+      <img id="bg-image" src="content/homecover.jpg">
+      <br>
+      <br>
 
-    <div id="overlay_text_landing">
-     <br><br><br><br>
-     <h2 id="yashnabowen">Yashna Bowen</h4><br>
-     <h3 id="daughterlearnerhobbyist">Daughter. Learner. Hobbyist</h1>
-	   <br>
-  	 
-    </div>
-    <br>
-    <div class="row" id="playbutton_landing">
+      <div id="overlay_text_landing">
+        <br><br><br><br>
+        <h2 id="yashnabowen">Yashna Bowen</h4><br>
+        <h3 id="daughterlearnerhobbyist">Daughter. Learner. Hobbyist</h1>
+        <br>
+  	  </div>
+    
+      <br>
+      
+      <div class="row" id="playbutton_landing">
         <a class="text-center" href="">
           <img id="playbuttonimage_landing" src = "content/scrolldown.png" data-toggle="modal" data-target="#myModal">
         </a>
+      </div>
     </div>
-
-
-  </div>
-
 </div>
 
 
