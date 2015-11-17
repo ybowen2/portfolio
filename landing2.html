@@ -41,7 +41,11 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <link href="css/lightbox.css" rel="stylesheet" />
 
+
+<!-- Personal CSS/JS Links -->
+<link rel="stylesheet" href="css/jquery.mThumbnailScroller.css">
   <link href="css/homepage.css" rel="stylesheet" />
+  <script src="js/jquery.mThumbnailScroller.min.js"></script>
 
 
 <title>Portfolio</title>
@@ -54,29 +58,140 @@
 <body>
 
 
-  <div>
+  <div class="abs-container">
     <div id="bg_container_landing" >
      
       <img id="bg-image" src="content/homecover.jpg">
       <br>
       <br>
 
-      <div id="overlay_text_landing">
+      <div >
         <br><br><br><br>
-        <h2 id="yashnabowen">Yashna Bowen</h4><br>
-        <h3 id="daughterlearnerhobbyist">Daughter. Learner. Hobbyist</h1>
+        <h2 id="yashnabowen" class="well">Yashna Bowen</h2><br>
+        <h3 id="daughterlearnerhobbyist" class="well">Daughter. Learner. Hobbyist</h3>
         <br>
   	  </div>
     
       <br>
       
       <div class="row" id="playbutton_landing">
-        <a class="text-center" href="">
+        <a class="text-center" href="#projectspage">
           <img id="playbuttonimage_landing" src = "content/scrolldown.png" data-toggle="modal" data-target="#myModal">
         </a>
       </div>
-    </div>
+   </div>
 </div>
+&nbsp;
+<br><br>
+
+<script type="text/javascript">
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+</script>
+
+
+
+
+
+<div class="abs-container" id="projectspage">
+  <!-- Nav tabs -->
+
+  <ul id="navtabs" class="nav nav-pills nav-justified" role="tablist">
+  
+    <li role="tabpanel" class="active col-xs-3">
+        <a id="tab-text"href="#home" aria-controls="webprojects" role="tab" data-toggle="pill">
+            web projects
+        </a>
+    </li>
+   
+ <li role="presentation" >
+        <a id="tab-text"href="#photography" aria-controls="photography" role="tab" data-toggle="pill">
+          photography
+        </a>
+      </li>
+   
+    <li role="presentation" >
+        <a id="tab-text"href="#writing" aria-controls="writing" role="tab" data-toggle="pill">
+          writing
+        </a>
+    </li>
+ 
+    <li role="presentation" >
+        <a id="tab-text" href="#visualart" aria-controls="visualart" role="tab" data-toggle="pill">
+          visual art
+        </a>
+    </li>
+ 
+  </ul>
+
+
+
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="webprojects">
+
+
+  </div>
+
+<div role="tabpanel" class="tab-pane fade" id="photography">
+
+  <div id="my-thumbs-list" class="mThumbnailScroller" data-mts-axis="x" data-mts-type="hover">
+  <ul>
+    <li><div class="well"><h2 id="picture-scroll-text"> Jonathan Fang Wei</h2></div>
+    <a href="image-1-link">
+    <div class="well">
+       <img src="content/jonathancover.jpg" /> </div></a></li>
+    
+    <li>
+     <div class="well"><h2 id="picture-scroll-text"> Kaitlyn Woolling + Cristobal Luna</h2></div>
+     <a href="image-2-link"><div class="well">
+       <img src="content/kaitlyncover.jpg" /></div></a></li>
+    
+
+    <li><div class="well"><h2 id="picture-scroll-text">Sara Heinemann</h2></div>
+    <a href="image-3-link"><div class="well">
+      <img src="content/saracover.jpg" /></div></a></li>
+    
+
+    <li><div class="well"><h2 id="picture-scroll-text"> Kathy Hoang</h2></div>
+    <a href="image-4-link"><div class="well">
+       <img src="content/kathycover.jpg" /></div></a></li>
+  </ul>
+
+  <div class="row" id="playbutton_landing">
+        <a class="text-center" href="#projectspage">
+          <img id="playbuttonimage_landing" src = "content/scrolldown.png" >
+        </a>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+  
+  <div role="tabpanel" class="tab-pane fade" id="writing">...</div>
+  <div role="tabpanel" class="tab-pane fade" id="visualart">...</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
 
 
 
@@ -117,35 +232,6 @@
 <div class="container">
     <div class="row" id="paddedviralsweep_landing" postion='relative'; z-index=100;>
 
-<!-- FULL PAGE 
-  <script type="text/javascript">
-	var cnt_id = "1e235cb7-22204";
-	</script>
-<script type="text/javascript" src="https://www.viralsweep.com/external/contest.js"></script>
-  -->
-      
-      
- <!--LIGHTBOX    
-  <script type="text/javascript" src="https://www.viralsweep.com/lightbox-widget/wid-553562a6-22616.js"></script>
-
--->
-
-<!-- WIDGET-->
-<!--
-<script type="text/javascript">
-        var cnt_id = "1e235cb7-22204";
-        </script>
-        <script type="text/javascript" src="https://www.viralsweep.com/external/widget.js"></script>
-    -->
-<!-->
- 
-     
-      <!--POPUP
-      <script>var vs_widget_hide_on_mobile = false;</script>
-<script src="https://www.viralsweep.com/widget/right-bottom-open/wid-22616-a05e.js" type="text/javascript"></script>
-      
-
--->
 </div>
 </div>
   </div>

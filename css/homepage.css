@@ -1,13 +1,13 @@
 
-@font-face {font-family: Header;src: url(css/Fonts/AmaticSC-Regular.ttf);}
-@font-face {font-family: mid-title;src: url(css/Fonts/eurof35.ttf);}
+@font-face {font-family: Header;src: url(../css/Fonts/AmaticSC-Regular.ttf);}
+@font-face {font-family: mid-title;src: url(../css/Fonts/eurof35.ttf);}
 
 
 
  #bg_container_landing { 
  position: relative;
    max-width: 99%;
-  max-height: 99%;
+  max-height: 95%;
 }
 
 #bg-image
@@ -15,8 +15,9 @@
   position:absolute;
   z-index:-99;
   margin: 1%;
-  opacity: 0.5;
-  max-width: 99%;
+  padding-left: 2%;
+  padding-right:2%;
+  max-width: 100%;
   max-height: 100%;
   border-style: solid;
   border-width: 3%;
@@ -25,7 +26,7 @@
 }
 
 #overlay_text_landing {
-  max-width: 99%;
+  max-width: 100%;
   max-height: 99%;
   height: 80%;
   position: relative;
@@ -35,49 +36,48 @@
 
 #yashnabowen 
 {
-  background-color: #000F2F;
+  background-color: #000;
   
   font-family: Header;
   font-size: 6em;
   color:#F1C2C2;
 
-  border-radius:2%;
+  border-radius: 25px;
   max-width: 33%;
   max-height:22%;
  
   text-align: center;
 
-  opacity: 0.5;
   margin-left: 35%;
   
 
 }
 
 #daughterlearnerhobbyist
-{
-  color: #8E2A50;
+{background-color: #000;
+  color: #973448;
+  text-align: center;
+  vertical-align: middle;
   font-family: mid-title;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   border-radius: 25px;
   width: 35%;
   max-width: 30%;
   max-height: 15%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  opacity: 0.6;
-  margin-left: 35%;
-  
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-left: 37%;
+  opacity: 0.8;
 
 }
 
 #playbutton_landing
 {
     height:100%;
-    z-index: 110;
     width:100%;
     vertical-align: top;
-    margin-left:46%;
+    margin-left:51%;
     margin-top: 0;
     position:relative;
 }
@@ -86,14 +86,15 @@
 #playbuttonimage_landing
 { 
   top:0%;
-  height:10%;
-  width:7%;
-  z-index: 110;
+  height:6%;
+  width:4%;
   position:relative;  
 }
 #projectspage
   {
     position: relative;
+    height: 80%;
+    width:97%;
    }
 
 
@@ -134,3 +135,41 @@ height:40%;}
   h4{color:#909090;
   font-size:12pt;}
   
+
+
+
+  #my-thumbs-list{
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    background-color: #DDDDDD;
+  overflow: auto;
+  width: 100%;
+}
+
+#picture-scroll-text
+{
+  position: absolute;
+  color:#F1C2C2;
+  font-family: Header;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+#navtabs, #tab-text
+{
+  font-family: mid-title;
+  font-size: 1.7em;
+  font-weight: lighter;
+  color: #973448;
+}
+.nav-pills > li > a:hover{
+  background-color: #F1C2C2 !important;
+  color:#fff;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover{
+    background-color: #fff;
+}
