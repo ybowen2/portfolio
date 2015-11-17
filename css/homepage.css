@@ -174,3 +174,11 @@ height:40%;}
 .nav-tabs > li.active > a:hover{
     background-color: #fff;
 }
+
+#contactmepage
+{
+  z-index: 200;
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
